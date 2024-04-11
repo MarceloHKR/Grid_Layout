@@ -7,14 +7,18 @@ class MainLayout(GridLayout):
         super(MainLayout, self).__init__(**kwargs)
         #cria duas colunas
         self.cols = 2
+
         #adiciona o botão na coluna 1
         self.add_widget(Button(text='Button 1'))
+
         #cria o segundo grid na coluna dois do layout 
         self.second_grid = GridLayout(cols =1)
+
         #adiciona os botões no segundo grid
         self.second_grid.add_widget(Button(text='Button 2'))
         self.second_grid.add_widget(Button(text='Button 3'))
         self.second_grid.add_widget(Button(text='Button 4'))
+        
         #adiciona o segundo grid
         self.add_widget(self.second_grid)
 
