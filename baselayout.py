@@ -1,11 +1,9 @@
 from kivy.app import App
-from kivy.uix.gridlayout import GridLayout
+from kivy.uix.widget import Widget
 
-class MainGridLayout(GridLayout):
-    pass
 
-class MyGridLayoutApp(App):
+class BaseApp(App):
     def build(self):
-        return MainGridLayout()
+        return Widget()
 if __name__ == "__main__":
-    MyGridLayoutApp().run()
+    BaseApp().run()
