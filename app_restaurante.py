@@ -5,7 +5,7 @@ from kivy.uix.floatlayout import FloatLayout
 class TelaPrincipal(FloatLayout):
     pass
         
-class TelaGarcom(Widget):
+class TelaGarcom(FloatLayout):
     pass
 
 
